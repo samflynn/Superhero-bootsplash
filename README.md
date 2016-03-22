@@ -27,6 +27,22 @@ Simply run the  `preview.sh` file. It will install `plymouth-x11` if required. T
 
 ###[GIF](http://www.shortlist.com/resource/binary/e461d9b8eee234af131d4339662991c9/comiccharcters480.gif)
 
+#####There will be some negligible lag
+You can either decrease the frames or run the following [optimizations](http://www.shortlist.com/resource/binary/e461d9b8eee234af131d4339662991c9/comiccharcters480.gif):
+
+>To fix it for Nvidia/ATI Cards:
+>Open Terminal (Press Ctrl+Alt+T)and enter the following commands:
+>The easiest way to fix ugly plymouth theme fter installing nvidia drivers is to open terminal and type:
+>sudo gedit /etc/default/grub
+>Look for the line :
+>#GRUB_GFXMODE=640x480
+>Just underneath write the line :
+>GRUB_GFXPAYLOAD_LINUX=auto
+>If this does not fix your problem replace "GRUB_GFXPAYLOAD_LINUX=auto" with:
+>GRUB_GFXPAYLOAD_LINUX="1024x768"
+>then update grub with this command line:
+>sudo update-grub
+>reboot and your fine.
 
 
 <b> Thanks to [Shobhit](https://github.com/skd1993) for the install.sh, preview.sh and some help with the script code. 
