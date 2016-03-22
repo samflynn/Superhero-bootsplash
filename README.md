@@ -10,13 +10,16 @@ The theme can be easily installed by running the `install.sh` file. Alternativel
 ---
 
 * make a directory in plymouth directory as stated below where the theme will be stored 
-`mkdir /lib/plymouth/themes/my-theme`
+
+ `mkdir /lib/plymouth/themes/my-theme`
 
 * copy the directory holding the theme files to the new place 
-* `cp --recursive /path/to/my-theme /lib/plymouth/themes/my-theme`
+
+ `cp --recursive /path/to/my-theme /lib/plymouth/themes/my-theme`
 
 * set it as default boot splash theme 
-`sudo ln -sf /lib/plymouth/themes/my-theme/my-theme.plymouth /etc/alternatives/default.plymouth`
+
+ `sudo ln -sf /lib/plymouth/themes/my-theme/my-theme.plymouth /etc/alternatives/default.plymouth`
 
 In order to get back to the system default theme: `sudo update-alternatives --config default.plymouth` and select the default theme you want, then `sudo update-initramfs -u`
 
@@ -32,16 +35,27 @@ You can either decrease the frames or run the following [optimizations](http://w
 
 >To fix it for Nvidia/ATI Cards:
 >Open Terminal (Press Ctrl+Alt+T)and enter the following commands:
+
 >The easiest way to fix ugly plymouth theme fter installing nvidia drivers is to open terminal and type:
+
 >`sudo gedit /etc/default/grub`
+
 >Look for the line :
+
 >`#GRUB_GFXMODE=640x480`
+
 >Just underneath write the line :
+
 >`#GRUB_GFXPAYLOAD_LINUX=auto`
+
 >If this does not fix your problem replace `#GRUB_GFXPAYLOAD_LINUX=auto` with:
+
 >`#GRUB_GFXPAYLOAD_LINUX=1024x768`
+
 >then update grub with this command line:
+
 >`sudo update-grub`
+
 >reboot and your fine.
 
 
