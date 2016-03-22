@@ -33,15 +33,15 @@ You can either decrease the frames or run the following [optimizations](http://w
 >To fix it for Nvidia/ATI Cards:
 >Open Terminal (Press Ctrl+Alt+T)and enter the following commands:
 >The easiest way to fix ugly plymouth theme fter installing nvidia drivers is to open terminal and type:
->sudo gedit /etc/default/grub
+>`sudo gedit /etc/default/grub`
 >Look for the line :
->#GRUB_GFXMODE=640x480
+>`#GRUB_GFXMODE=640x480`
 >Just underneath write the line :
->GRUB_GFXPAYLOAD_LINUX=auto
->If this does not fix your problem replace "GRUB_GFXPAYLOAD_LINUX=auto" with:
->GRUB_GFXPAYLOAD_LINUX="1024x768"
+>`#GRUB_GFXPAYLOAD_LINUX=auto`
+>If this does not fix your problem replace `#GRUB_GFXPAYLOAD_LINUX=auto` with:
+>`#GRUB_GFXPAYLOAD_LINUX=1024x768`
 >then update grub with this command line:
->sudo update-grub
+>`sudo update-grub`
 >reboot and your fine.
 
 
