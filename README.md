@@ -25,12 +25,12 @@ In order to get back to the system default theme: `sudo update-alternatives --co
 
 Simply run the  `preview.sh` file. It will install `plymouth-x11` if required. Then follow the instructions.
 
-
+###[GIF](http://www.shortlist.com/resource/binary/e461d9b8eee234af131d4339662991c9/comiccharcters480.gif)
 
 
 
 <b> Thanks to [Shobhit](https://github.com/skd1993) for the install.sh, preview.sh and some help with the script code. 
-Check out his [NSA-Bootsplash](https://github.com/skd1993/nsa-plymouth)
+Check out his [NSA-Bootsplash](https://github.com/skd1993/nsa-plymouth).
 </b>
 
 
