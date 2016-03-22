@@ -58,12 +58,13 @@ You can either decrease the frames or run the following [optimizations](http://w
 
 >reboot and your fine.
 
+---
 
 <b> Thanks to [Shobhit](https://github.com/skd1993) for the install.sh, preview.sh and some help with the script code. 
 Check out his [NSA-Bootsplash](https://github.com/skd1993/nsa-plymouth).
 </b>
 
-
+---
 
 # License
 
